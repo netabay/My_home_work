@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=“en” dir=“ltr”>
+   <head>
+       <meta charset=“utf-8”>
+       <title>creating form</title>
+       <link href="form.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <h1>my form</h1> 
+      
+      <form 
+          action="/my-handling-form-page" method="post"><!defines the location(URL) where the collected data form
+           to  be send when they are submitted
+          the method attributes define which HTTP method to send the data-->
+          
+        
+          <div>
+             <label for="name">name:</label>
+             <input type ="text" id="name" name="user_name"><br>
+            
+         </div> 
+         <div><label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_mail">
+               
+            </div>
+          <div><label for="msg">message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+              
+            </div>
+           <div class="button">
+               <button type="submit">send your message</button>
+           </div> 
+
+       </form>
+
+   </body>
+</html>
